@@ -11,6 +11,15 @@
 		67026CFC298688D8009F2F1B /* CourseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026CFB298688D8009F2F1B /* CourseListView.swift */; };
 		67026CFE298688D9009F2F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67026CFD298688D9009F2F1B /* Assets.xcassets */; };
 		67026D01298688D9009F2F1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67026D00298688D9009F2F1B /* Preview Assets.xcassets */; };
+		67026D0D29870CE4009F2F1B /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026D0C29870CE4009F2F1B /* CourseListViewModel.swift */; };
+		67026D1029870D6B009F2F1B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026D0F29870D6B009F2F1B /* Course.swift */; };
+		67026D1529870EBC009F2F1B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026D1429870EBC009F2F1B /* NetworkManager.swift */; };
+		67026D172988081D009F2F1B /* CourseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026D162988081D009F2F1B /* CourseDetailsView.swift */; };
+		67026D1929880879009F2F1B /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026D1829880879009F2F1B /* CourseDetailsViewModel.swift */; };
+		67026D1B29880A8E009F2F1B /* CourseImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026D1A29880A8E009F2F1B /* CourseImage.swift */; };
+		67026D1D29881217009F2F1B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026D1C29881217009F2F1B /* DataManager.swift */; };
+		67026D1F29885159009F2F1B /* FavoriteStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026D1E29885159009F2F1B /* FavoriteStatusButton.swift */; };
+		67026D2129885746009F2F1B /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67026D2029885746009F2F1B /* RowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		67026CFB298688D8009F2F1B /* CourseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListView.swift; sourceTree = "<group>"; };
 		67026CFD298688D9009F2F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67026D00298688D9009F2F1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67026D0C29870CE4009F2F1B /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
+		67026D0F29870D6B009F2F1B /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		67026D1429870EBC009F2F1B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		67026D162988081D009F2F1B /* CourseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsView.swift; sourceTree = "<group>"; };
+		67026D1829880879009F2F1B /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
+		67026D1A29880A8E009F2F1B /* CourseImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseImage.swift; sourceTree = "<group>"; };
+		67026D1C29881217009F2F1B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		67026D1E29885159009F2F1B /* FavoriteStatusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStatusButton.swift; sourceTree = "<group>"; };
+		67026D2029885746009F2F1B /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				67026D0929868B03009F2F1B /* CourseListView */,
+				67026D1229870DDF009F2F1B /* CourseDetails */,
+				67026D1329870DEE009F2F1B /* View */,
+				67026D1129870DD2009F2F1B /* Services */,
+				67026D0E29870D3F009F2F1B /* Models */,
 				67026CFF298688D9009F2F1B /* Preview Content */,
 				67026CFD298688D9009F2F1B /* Assets.xcassets */,
 				67026CF9298688D8009F2F1B /* SwiftbookApp_suiApp.swift */,
@@ -71,8 +93,45 @@
 			isa = PBXGroup;
 			children = (
 				67026CFB298688D8009F2F1B /* CourseListView.swift */,
+				67026D0C29870CE4009F2F1B /* CourseListViewModel.swift */,
 			);
 			path = CourseListView;
+			sourceTree = "<group>";
+		};
+		67026D0E29870D3F009F2F1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67026D0F29870D6B009F2F1B /* Course.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67026D1129870DD2009F2F1B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				67026D1429870EBC009F2F1B /* NetworkManager.swift */,
+				67026D1C29881217009F2F1B /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		67026D1229870DDF009F2F1B /* CourseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				67026D162988081D009F2F1B /* CourseDetailsView.swift */,
+				67026D1829880879009F2F1B /* CourseDetailsViewModel.swift */,
+			);
+			path = CourseDetails;
+			sourceTree = "<group>";
+		};
+		67026D1329870DEE009F2F1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67026D1A29880A8E009F2F1B /* CourseImage.swift */,
+				67026D1E29885159009F2F1B /* FavoriteStatusButton.swift */,
+				67026D2029885746009F2F1B /* RowView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +204,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67026D1B29880A8E009F2F1B /* CourseImage.swift in Sources */,
+				67026D1029870D6B009F2F1B /* Course.swift in Sources */,
 				67026CFC298688D8009F2F1B /* CourseListView.swift in Sources */,
+				67026D1529870EBC009F2F1B /* NetworkManager.swift in Sources */,
+				67026D1929880879009F2F1B /* CourseDetailsViewModel.swift in Sources */,
+				67026D0D29870CE4009F2F1B /* CourseListViewModel.swift in Sources */,
+				67026D172988081D009F2F1B /* CourseDetailsView.swift in Sources */,
+				67026D1F29885159009F2F1B /* FavoriteStatusButton.swift in Sources */,
+				67026D2129885746009F2F1B /* RowView.swift in Sources */,
+				67026D1D29881217009F2F1B /* DataManager.swift in Sources */,
 				67026CFA298688D8009F2F1B /* SwiftbookApp_suiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
