@@ -23,7 +23,7 @@ class CourseDetailsViewModel: CourseDetailsViewModelProtocol, ObservableObject {
     }
     
     var imageData: Data? {
-        try! NetworkManager.shared.fetchImageData(from: course.imageUrl)
+        try? NetworkManager.shared.fetchImageData(from: course.imageUrl)
     }
     
     var numberOfLessons: String {

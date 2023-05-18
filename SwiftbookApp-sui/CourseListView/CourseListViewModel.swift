@@ -20,7 +20,9 @@ class CourseListViewModel: CourseListViewModelProtocol, ObservableObject {
             let courses = try await NetworkManager.shared.fetchCourses()
             courses.forEach { course in
                 let courseDetailsViewModel = CourseDetailsViewModel(course: course)
-                rows.append(courseDetailsViewModel)
+                DispatchQueue.main.async {
+                    self.rows.append(courseDetailsViewModel)
+                }
             }
         } catch {
             print(error)
